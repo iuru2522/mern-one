@@ -35,7 +35,7 @@ export default class EditExercises extends Component {
           username: response.data.username,
           description: response.data.description,
           duration: response.data.duration,
-          date: new Date(response.data.date),
+          date: new Date(response.data.date), 
         });
       })
       .catch(function (error) {
