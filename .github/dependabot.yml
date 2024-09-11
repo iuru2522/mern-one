@@ -11,6 +11,5 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "all"
-    versioning-strategy:
-      - update-type: "semver:minor"
-      - update-type: "semver:patch"
+      - dependency-name: "*"
+        update-types: ["minor", "patch"]
