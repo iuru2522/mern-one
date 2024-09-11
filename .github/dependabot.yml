@@ -11,5 +11,6 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "all"
+    ignore:
       - dependency-name: "*"
-        update-types: ["minor", "patch"]
+        update-types: ["version-update:semver-major"]
