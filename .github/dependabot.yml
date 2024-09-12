@@ -9,8 +9,12 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    versioning-strategy: increase-if-necessary
     allow:
-      - dependency-type: "all"
+      - dependency-type: "direct"
+      - dependency-type: "indirect"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+    # Disable grouping
+    groups: []
