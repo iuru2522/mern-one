@@ -2,7 +2,6 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -15,10 +14,13 @@ updates:
       - dependency-type: "indirect"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
     groups:
-      # Example group configuration
       dependencies:
         - dependency-type: "direct"
         - dependency-type: "indirect"
-        update-types: ["version-update:patch"]
+        update-types:
+          - "version-update:patch"
+
