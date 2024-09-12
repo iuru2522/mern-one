@@ -19,9 +19,9 @@ updates:
           - "version-update:semver-minor"
     groups:
       dependencies:
-        - dependency-type: "direct"
-          update-types:
-            - "version-update:patch"
-        - dependency-type: "indirect"
-          update-types:
-            - "version-update:patch"
+        dependency-types:
+          - "direct"
+          - "indirect"
+        update-types:
+          - "version-update:patch"
+
