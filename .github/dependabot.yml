@@ -16,5 +16,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
-    # Disable grouping
-    groups: []
+    groups:
+      # Example group configuration
+      dependencies:
+        - dependency-type: "direct"
+        - dependency-type: "indirect"
+        update-types: ["version-update:patch"]
