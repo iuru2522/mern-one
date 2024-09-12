@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "bootstrap": "^4.3.1",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
-    "mongoose": "^6.2.0",
-    "nodemon": "^2.0.15",
-    "react": "^16.8.6",
-    "react-datepicker": "^2.5.0",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1"
+    "mongoose": "^8.6.2",
+    "nodemon": "^3.1.4",
+    "react": "^18.3.1",
+    "react-datepicker": "^7.3.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
